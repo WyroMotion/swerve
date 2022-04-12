@@ -1,5 +1,3 @@
-file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${PROJECT_SOURCE_DIR}/include/swerve/*.hpp")
-
 add_library(swerve_lib
   lib.cpp
 )

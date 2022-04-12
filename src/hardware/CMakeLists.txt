@@ -1,5 +1,3 @@
-file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${PROJECT_SOURCE_DIR}/include/hardware/*.hpp")
-
 add_library(hardware_lib
   lib.cpp
 )

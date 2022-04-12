@@ -17,7 +17,6 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
   # Testing
   include(CTest)
-  enable_testing()
   add_subdirectory(tests)
 
   # Linting
