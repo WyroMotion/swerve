@@ -20,7 +20,7 @@ jobs:
           submodules: "recursive"
 
       - name: Install requirements using apt.
-        run: sudo apt install -y clang-tidy
+        run: sudo apt install -y clang-tidy cppcheck
 
       # Install latest CMake.
       - uses: lukka/get-cmake@latest
