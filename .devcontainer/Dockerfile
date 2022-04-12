@@ -13,13 +13,16 @@ RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/s
     build-essential \
     cmake/bullseye-backports \
     ninja-build \
+    # Linters / Checkers
     clang-tidy \
     clang-format \
+    cppcheck \
     valgrind \
     # Vcpkg Dependencies
     zip \
     # Utility Dependencies
     git \
+    ccache \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*

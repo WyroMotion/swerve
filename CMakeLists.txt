@@ -22,6 +22,13 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
   # Linting
   set(CMAKE_CXX_CLANG_TIDY clang-tidy)
+  set(CMAKE_CXX_CPPCHECK cppcheck)
+
+  # Compiler Caching
+  find_program(CCACHE_PROGRAM ccache)
+  if(CCACHE_PROGRAM)
+      set(CMAKE_CXX_COMPILER_LAUNCHER "${CCACHE_PROGRAM}")
+  endif()
 endif()
 
 # Add library code
