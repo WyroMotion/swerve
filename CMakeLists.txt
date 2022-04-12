@@ -21,7 +21,7 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
   # Linting
   set(CMAKE_CXX_CLANG_TIDY clang-tidy)
-  set(CMAKE_CXX_CPPCHECK cppcheck)
+  set(CMAKE_CXX_CPPCHECK cppcheck "--std=c++20")
 
   # Compiler Caching
   find_program(CCACHE_PROGRAM ccache)
