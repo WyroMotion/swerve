@@ -1,0 +1,38 @@
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - name: Install requirements using apt.
+        run: sudo apt install -y clang-tidy
+
+      # Install latest CMake.
+      - uses: lukka/get-cmake@latest
+
+      # Restore from cache the previously built ports.
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v10
+
+      # Run CMake
+      - name: Run CMake consuming CMakePreset.json and vcpkg.json by mean of vcpkg.
+        uses: lukka/run-cmake@v10
+        with:
+          configurePreset: "debug"
+          buildPreset: "default"
+          testPreset: "default"
