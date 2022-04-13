@@ -31,14 +31,21 @@ Describe what is happening currently
 
 ---
 
+Commit: Specify commit on main issue is occurring
+
+System: Does this failure occur on hardware [Y / N]
+
+Safety: Is the issue safety critical? [Y / N]
+
 Add any information related to the failure
+
 
 ```
 Add any compiler or runtime errors
 ```
 
-## System Information
+## Steps to Reproduce
 
 ---
 
-Commit: Specify commit issue is occurring
+- Add detailed steps to reproduce the problem
