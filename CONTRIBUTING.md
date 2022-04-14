@@ -46,6 +46,7 @@
   * The user should add the `ready for review` tag to the Pull Request
   * The user may optionally choose to request review two (2) members, one of which must be a senior member
   * If no reviewers are requested, two will be assigned by a senior member, provided the `ready for review` tag has been applied
+  * The senior member should be the user assigned to the Pull Request in GitHub, though on Trello the Junior and Senior will be assigned to the card.
 * In the event of merge conflicts the responsiblity to rebase is on the author
 * The pull request may be merged upon approval from two (2) members one of which being a senior member.
 
