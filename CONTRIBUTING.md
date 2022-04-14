@@ -81,13 +81,13 @@
 * The begining of each file should have a header stating the file name, purpose, and contributors
 
 ``` cpp
-/*-----------------------------------------------------------------------------
-    file name: main.cpp
-
-    Description: Launch the program
-
-    Contributors: Aden Ramirez, Thomas Quillan
------------------------------------------------------------------------------*/
+/*
+ * File Name: main.cpp
+ *
+ * Description: Launch the program
+ *
+ * Contributors: Aden Ramirez, Thomas Quillan
+ */
 ```
 
 * Comments should be used at begining of any function or class to describe behavior
