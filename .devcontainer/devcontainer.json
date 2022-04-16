@@ -11,6 +11,7 @@
         "twxs.cmake",
         "matepek.vscode-catch2-test-adapter",
         "EditorConfig.EditorConfig",
-        "GitHub.vscode-pull-request-github"
+        "GitHub.vscode-pull-request-github",
+        "eamodio.gitlens"
     ]
 }
