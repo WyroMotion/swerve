@@ -36,3 +36,6 @@ jobs:
           configurePreset: "debug"
           buildPreset: "default"
           testPreset: "default"
+
+      - name: Check formatting with clang-format
+        run: ./scripts/format.sh --Werror --dry-run
