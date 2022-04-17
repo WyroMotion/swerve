@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
+    branches: [main, devel]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,3 +36,6 @@ jobs:
           configurePreset: "debug"
           buildPreset: "default"
           testPreset: "default"
+
+      - name: Check formatting with clang-format
+        run: ./scripts/format.sh --Werror --dry-run
