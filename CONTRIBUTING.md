@@ -21,7 +21,7 @@
 
 ### General
 
-* **NEVER commit directly to master or devel**
+* **NEVER commit directly to main or devel**
 * Allowed but discouraged
   * Avoid working on a single branch with multiple people
 
@@ -36,6 +36,7 @@
 ### Pull Requests
 
 * Pull requests should be opened whenever you want to add your branch changes to the code base
+* For substaintial pull requests open the pull request as a draft first, this will ensure easy tracking of progress
 * All pull requests should be directed at the `devel` branch
   * `devel` will be merged with `main` by a senior member on a weekly basis upon review
 * Your pull request description should include a brief overview of the changes, links to any issues that are resolved, and link Trello cards that the pull request addresses
@@ -46,7 +47,6 @@
   * The user should add the `ready for review` tag to the Pull Request
   * The user may optionally choose to request review two (2) members, one of which must be a senior member
   * If no reviewers are requested, two will be assigned by a senior member, provided the `ready for review` tag has been applied
-  * The senior member should be the user assigned to the Pull Request in GitHub, though on Trello the Junior and Senior will be assigned to the card.
 * In the event of merge conflicts the responsiblity to rebase is on the author
 * The pull request may be merged upon approval from two (2) members one of which being a senior member.
 
@@ -92,7 +92,6 @@
 ```
 
 * Comments should be used at begining of any function or class to describe behavior
-
 * Comments should be used when code is not self commenting or complex
 * Good examples
   * loop through the array of encoder data to find the largest gap in values
@@ -101,6 +100,14 @@
 
 ### Documentation
 
-* Documentation should be made for every large portion of the code to explain design philosiphy and expected behavior
-
-* TODO add specifics
+* Documentation will be seperated into two categories
+    * High Level Documentation should be done in the organization Google Docs and used for high level behavior.
+    * Low Level Documentation should be done in the source code following the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) and Doxygen syntax to output documents outside the source code TODO specify better
+* High Level Documentation
+    * Documentation documents should be made for any large portion of the code base, and topics that require substainial background knowledge to understand
+    * Documentation should offer a background, high level design decisions, and any signifigant information about the implementation
+    * All documentation should be linked in the README.md file
+* Low Level Documentation
+    * Low level documentation should follow all commenting guidelines
+    * Low level documentation will be used to generate HTML files using `doxygen` to allow for easier searching and reading as the codbase continues to grow.
+      * New `doxygen` files should be generated upon a merge from `devel` to `master`
