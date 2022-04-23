@@ -532,3 +532,6 @@ FodyWeavers.xsd
 .vscode/
 
 build/
+
+#Generated documentation from doxygen
+docs/
