@@ -95,12 +95,12 @@
 
 * Documentation will be seperated into two categories
     * High Level Documentation should be done in the organization Google Docs and used for high level behavior.
-    * Low Level Documentation should be done in the source code following the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) and Doxygen syntax to output documents outside the source code TODO specify better
+    * Low Level Documentation should be done in the source code following the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) and Doxygen syntax to output documents outside the source code
 * High Level Documentation
     * Documentation documents should be made for any large portion of the code base, and topics that require substainial background knowledge to understand
     * Documentation should offer a background, high level design decisions, and any signifigant information about the implementation
-    * All documentation should be linked in the `README.md` file
+    * All documentation should be linked in the `Docs.md` file
 * Low Level Documentation
     * Low level documentation should follow all commenting guidelines
     * Low level documentation will be used to generate HTML files using `doxygen` to allow for easier searching and reading as the codbase continues to grow.
-      * New `doxygen` files should be generated upon a merge from `devel` to `master`
+      * Low level documentation will be kept in sync with `main`
