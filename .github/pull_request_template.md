@@ -16,14 +16,14 @@
 
 ---
 
-<!--If there is no assciated issue, please say "No assciated issue",-->
+<!--If there is no associated issue, please say "No associated issues",-->
 - Issue #
 
 ## Miscellaneous Information
 
 ---
 
-<!--Is there any extra information to add or uncertianties to look closely at? Delete this section if there is none.-->
+<!--Is there any extra information to add or uncertainties to look closely at? Delete this section if there is none.-->
 
 ## Checklist for Review
 
