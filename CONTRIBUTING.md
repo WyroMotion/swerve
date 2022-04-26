@@ -103,4 +103,4 @@
 * Low Level Documentation
     * Low level documentation should follow all commenting guidelines
     * Low level documentation will be used to generate HTML files using `doxygen` to allow for easier searching and reading as the codbase continues to grow.
-      * New `doxygen` files should be generated upon a merge from  `xxx-xxx` to `devel` or `devel` to `master`
+      * New `doxygen` files should be generated upon a merge from `devel` to `master`
