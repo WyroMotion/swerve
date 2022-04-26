@@ -10,20 +10,20 @@
 
 ---
 
-<!--What are these changes supposed to accomplish?-->
+<!-- What are these changes supposed to accomplish? -->
 
 ## Associated GitHub Issues
 
 ---
 
-<!--If there is no associated issue, please say "No associated issues",-->
+<!-- If there is no associated issue, please say "No associated issues" -->
 - Issue #
 
 ## Miscellaneous Information
 
 ---
 
-<!--Is there any extra information to add or uncertainties to look closely at? Delete this section if there is none.-->
+<!-- Is there any extra information to add or uncertainties to look closely at? Delete this section if there is none -->
 
 ## Checklist for Review
 
